@@ -1,5 +1,7 @@
 # Add yourself some shortcuts to projects you often work on
 # Example:
+# Add yourself some shortcuts to projects you often work on
+# Example:
 #
 # brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
 #
@@ -10,6 +12,8 @@
 
 # Amazon Linux Paths
 webroot=/var/www/html
-httproot=/etc/httpd
-pearroot=/usr/share/pear
-svnroot=/srv/Subversion
+httproot=/etc/apache2
+pearroot=/usr/share/php/
+ldaproot=/etc/ldap
+mailroot=/etc/postfix
+# svnroot=/srv/Subversion
