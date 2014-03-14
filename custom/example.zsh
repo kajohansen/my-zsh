@@ -16,4 +16,5 @@ httproot=/etc/apache2
 pearroot=/usr/share/php/
 ldaproot=/etc/ldap
 mailroot=/etc/postfix
+doveroot=/etc/dovecot/conf.d
 # svnroot=/srv/Subversion
