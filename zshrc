@@ -28,7 +28,7 @@ source $ZSH/my-zsh.sh
 #export MYSQL_HOME='/usr/local/mysql-5.6.16-osx10.7-x86_64'
 #export MAGICK_LIB='/usr/local/Cellar/imagemagick/6.8.0-10/lib'
 #export BREW_HOME='/Developer/homebrew'
-#export PATH=/usr/local/bin:$MYSQL_HOME/bin:$BREW_HOME/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # ALL
 export SVN_EDITOR="vim"
