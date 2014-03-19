@@ -1,10 +1,8 @@
 # Aliases
-alias g='git'
-compdef g=git
 alias gst='git status'
 compdef _git gst=git-status
-alias gl='git pull'
-compdef _git gl=git-pull
+alias gl='git log --oneline --reverse'
+compdef _git gl=git-log
 alias gup='git fetch && git rebase'
 compdef _git gup=git-fetch
 alias gp='git push'
@@ -25,8 +23,10 @@ alias gcount='git shortlog -sn'
 compdef gcount=git
 alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
-alias glg='git log --stat --max-count=5'
-compdef _git glg=git-log
+alias glg='git log --stat --max-count=2 --reverse'
+compdef _git glg=git-log-stat
+alias gia='git add .'
+compdef _git gia=git-add
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
