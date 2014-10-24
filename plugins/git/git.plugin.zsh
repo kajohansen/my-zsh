@@ -1,7 +1,7 @@
 # Aliases
 alias gst='git status'
 compdef _git gst=git-status
-alias gl='git log --oneline --reverse'
+alias gl='git log --oneline --reverse --decorate'
 compdef _git gl=git-log
 alias gup='git fetch && git rebase'
 compdef _git gup=git-fetch
