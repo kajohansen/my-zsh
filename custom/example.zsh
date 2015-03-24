@@ -11,3 +11,4 @@ pearroot=/usr/share/php/
 ldaproot=/etc/ldap
 mailroot=/etc/postfix
 doveroot=/etc/dovecot/conf.d
+sambaroot=/usr/local/samba
