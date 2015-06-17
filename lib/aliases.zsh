@@ -13,6 +13,7 @@ alias _='sudo'
 
 # Show history
 alias history='fc -l 1'
+alias h='history'
 
 # List direcory contents
 alias lsa='ls -lah'
