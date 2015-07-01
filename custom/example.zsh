@@ -13,3 +13,4 @@ postroot=/etc/postfix
 doveroot=/etc/dovecot/conf.d
 smbroot=/etc/samba
 sambaroot=/var/lib/samba
+vpnroot=/etc/openvpn
