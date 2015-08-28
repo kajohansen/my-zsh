@@ -24,6 +24,10 @@ alias afind='ack-grep -il'
 
 alias x=extract
 
+#File aliases
+alias terror="sudo tail -f /var/log/apache2/error.log"
+alias taccess="sudo tail -f /var/log/apache2/access.log"
+
 # My aliases
 alias df="df -h"
 alias du="du -hd"
@@ -46,8 +50,6 @@ alias epaths="vim ~/.my-zsh/custom/example.zsh"
 alias v="sudo vim"
 alias f="sudo tail -f"
 alias uandu="sudo apt-get update && sudo apt-get upgrade -y"
-alias taccess="sudo tail -f /var/log/apache2/access.log"
-alias terror="sudo tail -f /var/log/apache2/error_log"
 alias _srn="sudo shutdown -r now"
 alias _shn="sudo shutdown -h now"
 alias esconf="vim ~/.ssh/config"
