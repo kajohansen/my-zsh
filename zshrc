@@ -24,6 +24,7 @@ plugins=(git)
 source $ZSH/my-zsh.sh
 
 # Amazon
+#export RBENV_HOME=$HOME/.rbenv
 export PATH=/usr/local/bin:$PATH
 
 # ALL
