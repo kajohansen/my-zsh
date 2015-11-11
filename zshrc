@@ -33,3 +33,6 @@ source $ZSH/my-zsh.sh
 # ALL
 export SVN_EDITOR="vim"
 
+# Ruby - rbenv initialize
+#eval "$(rbenv init -)"
+
