@@ -26,6 +26,8 @@ source $ZSH/my-zsh.sh
 # OSX
 #export PG_HOME='/Library/PostgreSQL/9.1/'
 #export MYSQL_HOME='/usr/local/mysql-5.6.16-osx10.7-x86_64'
+#export FREEGLUT_HEADERS='/Developer/homebrew/Cellar/freeglut/2.8.1/include'
+#export C_INCLUDE_PATH=.:$FREEGLUT_HEADERS:/opt/X11/included
 #export MAGICK_LIB='/usr/local/Cellar/imagemagick/6.8.0-10/lib'
 #export BREW_HOME='/Developer/homebrew'
 #export GEMS_HOME='~/.rbenv/shims'
