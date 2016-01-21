@@ -8,6 +8,7 @@ alias -- -='cd -'
 
 # Super user
 alias _='sudo'
+alias sus='sudo /bin/zsh'
 
 #alias g='grep -in'
 
