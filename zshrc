@@ -24,9 +24,12 @@ plugins=(git)
 source $ZSH/my-zsh.sh
 
 # Amazon
-#export RBENV_HOME=$HOME/.rbenv
+#export RBENV_HOME=$HOME/.rbenv/bin
+#export RBENV_PLUGINS=$HOME/.rbenv/plugins/ruby-build/bin
 export PATH=/usr/local/bin:$PATH
 
 # ALL
 export SVN_EDITOR="vim"
 
+# Ruby - rbenv initialize
+#eval "$(rbenv init -)"
