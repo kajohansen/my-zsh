@@ -64,3 +64,4 @@ alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whos
 alias geolocation="/Users/superuser/Applications/Ruby/functions/geo_coding.rb"
 alias iplocation="/Users/superuser/Applications/Ruby/functions/ip_location.rb"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+alias watch_chrome="~/Box\ Sync/Applications/Ruby/watch/watch_chrome.rb"
