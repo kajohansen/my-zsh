@@ -5,6 +5,15 @@
 #       VERSION:  1.1.0
 # ------------------------------------------------------------------------------
 
+# Aliases
+alias mac="networksetup -getmacaddress" # mac en1 (will get mac address of Wi-Fi card)
+alias thomson="networksetup -setairportnetwork en1 Thomson8E2CA7 E0F2181E20"
+alias express="networksetup -setairportnetwork en1 'Riis Nettverk' 101Delicion"
+alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'"
+
+# Functions
 function tab() {
   local command="cd \\\"$PWD\\\"; clear; "
   (( $# > 0 )) && command="${command}; $*"
