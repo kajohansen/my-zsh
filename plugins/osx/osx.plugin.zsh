@@ -12,6 +12,7 @@ alias express="networksetup -setairportnetwork en1 'Riis Nettverk' 101Delicion"
 alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say dns lagring ble rensket;"
 
 # Functions
 function tab() {
