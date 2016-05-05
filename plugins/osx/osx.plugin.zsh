@@ -139,7 +139,7 @@ function pushdf() {
   pushd "$(pfd)"
 }
 
-function quick-look() {
+function quick-look() { # quick-look a file from the terminal
   (( $# > 0 )) && qlmanage -p $* &>/dev/null &
 }
 
@@ -147,7 +147,7 @@ function man-preview() {
   man -t "$@" | open -f -a Preview
 }
 
-function trash() {
+function trash() { # move a file or folder to the trash
   local trash_dir="${HOME}/.Trash"
   local temp_ifs=$IFS
   IFS=$'\n'
@@ -164,6 +164,16 @@ function trash() {
   IFS=$temp_ifs
 }
 
-function vncviewer() {
+function vncviewer() { # example: vncviewer 192.168.0.1
   open vnc://$@
+}
+
+function copydir {  # copy directory-path to clipboard
+  pwd | tr -d "\r\n" | pbcopy
+}
+
+function copyfile { # copy file to clipboard
+  [[ "$#" != 1 ]] && return 1
+  local file_to_copy=$1
+  cat $file_to_copy | pbcopy
 }
