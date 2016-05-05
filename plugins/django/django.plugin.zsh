@@ -1,5 +1,11 @@
-#compdef manage.py
+# Aliases
+alias djrs="python manage.py runserver"
+alias djsh="python manage.py shell"
+alias djml="python manage.py migrate --list"
+alias djmm="python manage.py makemigrations"
+alias djm="python manage.py migrate"
 
+#compdef manage.py
 typeset -ga nul_args
 nul_args=(
   '--verbosity=-[verbosity level; 0=minimal output, 1=normal output, 2=all output.]:Verbosity:((0\:minimal 1\:normal 2\:all))'
