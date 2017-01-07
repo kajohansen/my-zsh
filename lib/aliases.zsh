@@ -24,6 +24,7 @@ alias x=extract
 alias v='sudo vim'
 
 # My aliases
+alias path="echo $PATH | tr ':' '\n'"
 alias df="df -h"
 alias du="du -hd"
 alias g='grep -inR'
@@ -47,6 +48,7 @@ alias terror="sudo tail -f /var/log/httpd/error_log"
 # OSX Server aliases
 alias epf="sudo pfctl -evf /etc/pf.conf"
 alias dpf="sudo pfctl -d"
+alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 # OSX aliases
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias ephpini="sudo vim /etc/php.ini"
