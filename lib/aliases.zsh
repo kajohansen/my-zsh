@@ -24,7 +24,8 @@ alias x=extract
 alias v='sudo vim'
 
 # My aliases
-alias path="echo $PATH | tr ':' '\n'"
+alias path='echo $PATH | tr ":" "\n"'
+# Note: better to use single quotes with dobble-quotes inside!
 alias df="df -h"
 alias du="du -hd"
 alias g='grep -inR'
