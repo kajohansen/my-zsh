@@ -5,6 +5,16 @@
 #       VERSION:  1.1.0
 # ------------------------------------------------------------------------------
 
+# Aliases
+alias mac="networksetup -getmacaddress" # mac en1 (will get mac address of Wi-Fi card)
+alias thomson="networksetup -setairportnetwork en1 Thomson8E2CA7 E0F2181E20"
+alias express="networksetup -setairportnetwork en1 'Riis Nettverk' 101Delicion"
+alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say dns lagring ble rensket;"
+
+# Functions
 function tab() {
   local command="cd \\\"$PWD\\\"; clear; "
   (( $# > 0 )) && command="${command}; $*"
@@ -129,7 +139,7 @@ function pushdf() {
   pushd "$(pfd)"
 }
 
-function quick-look() {
+function quick-look() { # quick-look a file from the terminal
   (( $# > 0 )) && qlmanage -p $* &>/dev/null &
 }
 
@@ -137,7 +147,7 @@ function man-preview() {
   man -t "$@" | open -f -a Preview
 }
 
-function trash() {
+function trash() { # move a file or folder to the trash
   local trash_dir="${HOME}/.Trash"
   local temp_ifs=$IFS
   IFS=$'\n'
@@ -154,6 +164,16 @@ function trash() {
   IFS=$temp_ifs
 }
 
-function vncviewer() {
+function vncviewer() { # example: vncviewer 192.168.0.1
   open vnc://$@
+}
+
+function copydir {  # copy directory-path to clipboard
+  pwd | tr -d "\r\n" | pbcopy
+}
+
+function copyfile { # copy file to clipboard
+  [[ "$#" != 1 ]] && return 1
+  local file_to_copy=$1
+  cat $file_to_copy | pbcopy
 }

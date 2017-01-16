@@ -26,6 +26,8 @@ alias v='sudo vim'
 # My aliases
 alias _srn="sudo shutdown -r now"
 alias _shn="sudo shutdown -h now"
+alias path='echo $PATH | tr ":" "\n"'
+# Note: better to use single quotes with dobble-quotes inside!
 alias df="df -h"
 alias du="du -hd"
 alias g='grep -inR'
@@ -49,6 +51,7 @@ alias terror="sudo tail -f /var/log/httpd/error_log"
 # OSX Server aliases
 alias epf="sudo pfctl -evf /etc/pf.conf"
 alias dpf="sudo pfctl -d"
+alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 # OSX aliases
 alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2012.vmwarevm/Windows\ Server\ 2012.vmx nogui"
 alias vmubuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ Server\ 16.04.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
@@ -64,7 +67,6 @@ alias emycnf="sudo vim /etc/mysql/my.cnf"
 alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias sass="sass"
-alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'"
 alias geolocation="/Users/superuser/Applications/Ruby/functions/geo_coding.rb"
 alias iplocation="/Users/superuser/Applications/Ruby/functions/ip_location.rb"
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+alias watch_chrome="~/Box\ Sync/Applications/Ruby/watch/watch_chrome.rb"
