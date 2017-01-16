@@ -24,6 +24,8 @@ alias x=extract
 alias v='sudo vim'
 
 # My aliases
+alias _srn="sudo shutdown -r now"
+alias _shn="sudo shutdown -h now"
 alias df="df -h"
 alias du="du -hd"
 alias g='grep -inR'
@@ -48,6 +50,8 @@ alias terror="sudo tail -f /var/log/httpd/error_log"
 alias epf="sudo pfctl -evf /etc/pf.conf"
 alias dpf="sudo pfctl -d"
 # OSX aliases
+alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2012.vmwarevm/Windows\ Server\ 2012.vmx nogui"
+alias vmubuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ Server\ 16.04.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias thomson="networksetup -setairportnetwork en1 Thomson8E2CA7 E0F2181E20"
 alias express="networksetup -setairportnetwork en1 'Riis Nettverk' 101Delicion"
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
@@ -56,7 +60,7 @@ alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias rhttpd="sudo apachectl restart"
 alias mycnf="cat /etc/mysql/my.cnf"
 alias emycnf="sudo vim /etc/mysql/my.cnf"
-alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
+#alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
 alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias sass="sass"
