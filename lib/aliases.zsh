@@ -53,7 +53,7 @@ alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias ephpini="sudo vim /etc/php.ini"
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias mycnf="cat /etc/mysql/my.cnf"
-alias emycnf="sudo vim /etc/mysql/my.cnf"
+alias emycnf="sudo vim /etc/my.cnf"
 
 # OSX Server aliases
 alias epf="sudo pfctl -evf /etc/pf.conf"
