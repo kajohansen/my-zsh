@@ -11,8 +11,8 @@ function upgrade_oh_my_zsh() {
 }
 
 function aliases() {
-	echo "# oh-my-zsh aliases"
-	cat ~/.oh-my-zsh/lib/aliases.zsh | egrep '^alias'
+	echo "# my-zsh aliases"
+	cat ~/.my-zsh/lib/aliases.zsh | egrep '^alias'
 	echo "# zshrc aliases"
 	cat ~/.zshrc | egrep '^alias'
 }
