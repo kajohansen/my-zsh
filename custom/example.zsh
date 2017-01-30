@@ -9,3 +9,4 @@
 webroot=/Users/superuser/Sites
 httproot=/etc/apache2
 pearroot=/usr/lib/php/pear
+svnroot=/Users/Shared/Subversion

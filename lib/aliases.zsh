@@ -58,8 +58,8 @@ alias emycnf="sudo vim /etc/my.cnf"
 # OSX Server aliases
 alias epf="sudo pfctl -evf /etc/pf.conf"
 alias dpf="sudo pfctl -d"
-alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2012.vmwarevm/Windows\ Server\ 2012.vmx nogui"
-alias vmubuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ Server\ 16.04.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
+alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2008\ R2\ x64.vmwarevm/Windows\ Server\ 2008\ R2\ x64.vmx nogui"
+alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias rhttpd="sudo apachectl restart"
 
 # OSX aliases
