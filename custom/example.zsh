@@ -8,9 +8,7 @@
 # Mac OS X paths
 httproot=/etc/apache2
 pearroot=/usr/lib/php/pear
-<<<<<<< Updated upstream
 svnroot=/Users/Shared/Subversion
-=======
 desktop=/Users/superuser/Desktop
 documents=/Users/superuser/Documents
 sites=/Users/superuser/Sites
@@ -19,4 +17,4 @@ downloads=/Users/superuser/Downloads
 userlocal=/usr/local
 homebrew=/Developer/homebrew
 webserver=/Library/WebServer/Documents
->>>>>>> Stashed changes
+myzsh=~/.my-zsh
