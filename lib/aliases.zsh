@@ -74,4 +74,5 @@ alias iplocation="/Users/superuser/Applications/Ruby/functions/ip_location.rb"
 alias watch_chrome="~/Box\ Sync/Applications/Ruby/watch/watch_chrome.rb"
 alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
 alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
+alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
 
