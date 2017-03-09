@@ -54,7 +54,7 @@ alias df="sudo df -hl" # print available space (in human readable format) on loc
 alias du="sudo du -hd 0" # print combined size of contents of current directory
 alias myirb="irb --prompt inf-ruby --readline"
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ip="ipconfig getifaddr en1"
+alias myip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+.\d+.\d+)/ && print $1'"
 
 # OSX Server aliases
@@ -71,8 +71,9 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias sass="sass"
 alias geolocation="/Users/superuser/Applications/Ruby/functions/geo_coding.rb"
 alias iplocation="/Users/superuser/Applications/Ruby/functions/ip_location.rb"
-alias watch_chrome="~/Box\ Sync/Applications/Ruby/watch/watch_chrome.rb"
+alias watch_chrome="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch_chrome.rb"
+alias watch="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch.rb"
 alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
 alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
 alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
-
+alias listening="lsof -n -i tcp"
