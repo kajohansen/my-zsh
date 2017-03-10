@@ -20,7 +20,7 @@ then
   if [ $epoch_diff -gt 6 ]
   then
     echo "[Oh My Zsh] Would you like to check for updates?"
-    echo "Type Y to update oh-my-zsh: \c"
+    echo "Type Y to update my-zsh: \c"
     read line
     if [ "$line" = Y ] || [ "$line" = y ]
     then

@@ -1,10 +1,10 @@
-# Path to your oh-my-zsh configuration.
+# Path to your my-zsh configuration.
 export ZSH=$HOME/.my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# time that my-zsh is loaded.
 export ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
@@ -19,7 +19,7 @@ export ZSH_THEME="robbyrussell"
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load? (plugins can be found in ~/.my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git textmate rails ruby)
 

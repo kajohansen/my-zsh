@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 #          FILE:  composer.plugin.zsh
-#   DESCRIPTION:  oh-my-zsh composer plugin file.
+#   DESCRIPTION:  my-zsh composer plugin file.
 #        AUTHOR:  Daniel Gomes (me@danielcsgomes.com)
 #       VERSION:  1.0.0
 # ------------------------------------------------------------------------------
