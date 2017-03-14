@@ -18,5 +18,6 @@ userlocal=/usr/local
 homebrew=/Developer/homebrew
 webserver=/Library/WebServer/Documents
 myzsh=~/.my-zsh
+cellar=/Developer/homebrew/Cellar
 # Mac OS X Server paths
 webapps=/Library/Server/Web/Config/apache2/webapps
