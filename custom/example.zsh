@@ -8,7 +8,7 @@
 # Mac OS X paths
 httproot=/etc/apache2
 pearroot=/usr/lib/php/pear
-svnroot=/Users/Shared/Subversion
+svnroot=/Volumes/Backup/OSX/Data/Subversion
 desktop=/Users/superuser/Desktop
 documents=/Users/superuser/Documents
 sites=/Users/superuser/Sites
