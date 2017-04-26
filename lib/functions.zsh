@@ -2,17 +2,17 @@ function zsh_stats() {
   history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 }
 
-function uninstall_oh_my_zsh() {
+function uninstall_my_zsh() {
   /bin/sh $ZSH/tools/uninstall.sh
 }
 
-function upgrade_oh_my_zsh() {
+function upgrade_my_zsh() {
   /bin/sh $ZSH/tools/upgrade.sh
 }
 
 function aliases() {
-	echo "# oh-my-zsh aliases"
-	cat ~/.oh-my-zsh/lib/aliases.zsh | egrep '^alias'
+	echo "# my-zsh aliases"
+	cat ~/.my-zsh/lib/aliases.zsh | egrep '^alias'
 	echo "# zshrc aliases"
 	cat ~/.zshrc | egrep '^alias'
 }

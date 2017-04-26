@@ -1,15 +1,15 @@
-echo "Removing ~/.oh-my-zsh"
-if [[ -d ~/.oh-my-zsh ]]
+echo "Removing ~/.my-zsh"
+if [[ -d ~/.my-zsh ]]
 then
-  rm -rf ~/.oh-my-zsh
+  rm -rf ~/.my-zsh
 fi
 
 echo "Looking for an existing zsh config..."
-if [ -f ~/.zshrc.pre-oh-my-zsh ] || [ -h ~/.zshrc.pre-oh-my-zsh ]
+if [ -f ~/.zshrc.pre-my-zsh ] || [ -h ~/.zshrc.pre-my-zsh ]
 then
-  echo "Found ~/.zshrc. Backing up to ~/.zshrc.pre-oh-my-zsh";
+  echo "Found ~/.zshrc. Backing up to ~/.zshrc.pre-my-zsh";
   rm ~/.zshrc;
-  cp ~/.zshrc.pre-oh-my-zsh ~/.zshrc;
+  cp ~/.zshrc.pre-my-zsh ~/.zshrc;
   source ~/.zshrc;
 else
   echo "Switching back to bash"

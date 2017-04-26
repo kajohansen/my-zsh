@@ -3,7 +3,7 @@
 # add a function path
 fpath=($ZSH/functions $ZSH/completions $fpath)
 
-# Load all of the config files in ~/oh-my-zsh that end in .zsh
+# Load all of the config files in ~/my-zsh that end in .zsh
 # TIP: Add files you don't want in git to .gitignore
 for config_file ($ZSH/lib/*.zsh) source $config_file
 
@@ -35,7 +35,7 @@ then
   ((N=(RANDOM%N)+1))
   RANDOM_THEME=${themes[$N]}
   source "$RANDOM_THEME"
-  echo "[oh-my-zsh] Random theme '$RANDOM_THEME' loaded..."
+  echo "[my-zsh] Random theme '$RANDOM_THEME' loaded..."
 else
   source "$ZSH/themes/$ZSH_THEME.zsh-theme"
 fi

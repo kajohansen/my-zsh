@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 #          FILE: dogenpunk.zsh-theme
-#   DESCRIPTION: oh-my-zsh theme file.
+#   DESCRIPTION: my-zsh theme file.
 #        AUTHOR: Matthew Nelson (dogenpunk@gmail.com)
 #       VERSION: 0.1
 #    SCREENSHOT: coming soon

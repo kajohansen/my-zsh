@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 #          FILE:  osx.plugin.zsh
-#   DESCRIPTION:  oh-my-zsh plugin file.
+#   DESCRIPTION:  my-zsh plugin file.
 #        AUTHOR:  Sorin Ionescu (sorin.ionescu@gmail.com)
 #       VERSION:  1.1.0
 # ------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 #          FILE:  sorin.zsh-theme
-#   DESCRIPTION:  oh-my-zsh theme file.
+#   DESCRIPTION:  my-zsh theme file.
 #        AUTHOR:  Sorin Ionescu (sorin.ionescu@gmail.com)
 #       VERSION:  1.0.2
 #    SCREENSHOT:  http://i.imgur.com/aipDQ.png

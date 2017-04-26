@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 #          FILE:  kphoen.zsh-theme
-#   DESCRIPTION:  oh-my-zsh theme file.
+#   DESCRIPTION:  my-zsh theme file.
 #        AUTHOR:  Kévin Gomez (geek63@gmail.com)
 #       VERSION:  1.0.0
 #    SCREENSHOT:

@@ -2,7 +2,7 @@ export ZSH=$HOME/.my-zsh
 export EDITOR='vim'
 
 
-# Look in ~/.oh-my-zsh/themes/
+# Look in ~/.my-zsh/themes/
 export ZSH_THEME="candy"
 
 # Set to this to use case-sensitive completion
@@ -17,7 +17,7 @@ export DISABLE_AUTO_UPDATE="true"
 # Uncomment following line if you want to disable autosetting terminal title
 export DISABLE_AUTO_TITLE="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load? (plugins can be found in ~/.my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
