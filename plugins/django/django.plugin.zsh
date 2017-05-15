@@ -1,5 +1,13 @@
-#compdef manage.py
+# Aliases
+alias djrs="python manage.py runserver"
+alias djsh="python manage.py shell"
+alias djsm="python manage.py showmigrations"
+alias djsmp="python manage.py showmigrations --plan"
+alias djmm="python manage.py makemigrations"
+alias djm="python manage.py migrate"
+alias djt="python manage.py test"
 
+#compdef manage.py
 typeset -ga nul_args
 nul_args=(
   '--settings=-[the Python path to a settings module.]:file:_files'
