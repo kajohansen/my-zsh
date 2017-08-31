@@ -12,8 +12,11 @@ pearroot=/usr/local/lib/php/pear
 svnroot=/Users/Shared/Subversion
 =======
 pearroot=/usr/lib/php/pear
+<<<<<<< Updated upstream
 svnroot=/Volumes/Backup/OSX/Data/Subversion
 >>>>>>> a4b2b1fd6152e2b15fb1bc473e62f9b2a6ab71bd
+=======
+>>>>>>> Stashed changes
 desktop=/Users/superuser/Desktop
 documents=/Users/superuser/Documents
 sites=/Users/superuser/Sites
@@ -22,7 +25,10 @@ downloads=/Users/superuser/Downloads
 userlocal=/usr/local
 homebrew=/Developer/homebrew
 webserver=/Library/WebServer/Documents
+<<<<<<< Updated upstream
 myzsh=~/.my-zsh
 cellar=/Developer/homebrew/Cellar
 # Mac OS X Server paths
 webapps=/Library/Server/Web/Config/apache2/webapps
+=======
+>>>>>>> Stashed changes
