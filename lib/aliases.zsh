@@ -37,13 +37,14 @@ alias epaths="vim ~/.my-zsh/custom/example.zsh"
 alias ehosts="sudo vim /etc/hosts"
 alias esconf="vim ~/.ssh/config"
 alias ezshrc="vim ~/.zshrc"
-alias taccess="sudo tail -f /var/log/httpd/access_log" # follow apache server access log file
-alias terror="sudo tail -f /var/log/httpd/error_log" # follow apache server error log file
+alias taccess="sudo tail -f /private/var/log/apache2/access_log" # follow apache server access log file
+alias terror="sudo tail -f /private/var/log/apache2/error_log" # follow apache server error log file
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias ephpini="sudo vim /etc/php.ini"
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias mycnf="cat /etc/mysql/my.cnf"
 alias emycnf="sudo vim /etc/my.cnf"
+alias src="source ~/.zshrc"
 
 # My aliases
 alias path='echo $PATH | tr ":" "\n"' # print shell path variable
@@ -75,5 +76,8 @@ alias watch_chrome="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/
 alias watch="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch.rb"
 alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
 alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
+alias dns_local="sudo networksetup -setdnsservers Wi-Fi 192.168.0.1"
 alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
 alias listening="lsof -n -i tcp"
+alias imgcat="~/Applications/ShellScripts/my_scripts/imgcat.sh"
+alias sss="find ./ -type f -print0 | xargs -0 perl -pi -w -e"

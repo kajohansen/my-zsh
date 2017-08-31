@@ -1,9 +1,11 @@
 # Aliases
 alias djrs="python manage.py runserver"
 alias djsh="python manage.py shell"
-alias djml="python manage.py migrate --list"
+alias djsm="python manage.py showmigrations"
+alias djsmp="python manage.py showmigrations --plan"
 alias djmm="python manage.py makemigrations"
 alias djm="python manage.py migrate"
+alias djt="python manage.py test"
 
 #compdef manage.py
 typeset -ga nul_args
