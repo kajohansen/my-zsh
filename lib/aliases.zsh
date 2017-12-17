@@ -39,6 +39,10 @@ alias esconf="vim ~/.ssh/config"
 alias ezshrc="vim ~/.zshrc"
 alias taccess="sudo tail -f /private/var/log/apache2/access_log" # follow apache server access log file
 alias terror="sudo tail -f /private/var/log/apache2/error_log" # follow apache server error log file
+alias evimrc="vim ~/.vimrc"
+alias vimrc="cat ~/.vimrc"
+alias taccess="sudo tail -f /var/log/httpd/access_log" # follow apache server access log file
+alias terror="sudo tail -f /var/log/httpd/error_log" # follow apache server error log file
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias ephpini="sudo vim /etc/php.ini"
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
@@ -67,6 +71,7 @@ alias rhttpd="sudo apachectl restart"
 
 # OSX aliases
 #alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
+alias top="top -n 10 -o cpu -s 5"
 alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias sass="sass"
@@ -77,9 +82,13 @@ alias watch="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch.r
 alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
 alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
 alias dns_local="sudo networksetup -setdnsservers Wi-Fi 192.168.0.1"
+alias dns_win="sudo networksetup -setdnsservers Wi-Fi 192.168.1.1"
 alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
 alias listening="lsof -n -i tcp"
 alias imgcat="~/Applications/ShellScripts/my_scripts/imgcat.sh"
 alias sss="find ./ -type f -print0 | xargs -0 perl -pi -w -e"
 alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_three.py"
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
+alias ram="system_profiler SPHardwareDataType | grep Memory:"
+alias cpu="system_profiler SPHardwareDataType | grep Processors:"
+alias cores="system_profiler SPHardwareDataType | grep Cores:"
