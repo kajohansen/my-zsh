@@ -27,6 +27,7 @@ alias x=extract
 
 #File aliases
 alias ehosts="sudo vim /etc/hosts"
+alias emycnf="sudo vim /etc/mysql/my.cnf"
 alias hosts="cat /etc/hosts"
 alias eresolv="sudo vim /etc/resolv.conf"
 alias resolv="cat /etc/resolv.conf"

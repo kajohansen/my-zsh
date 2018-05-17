@@ -5,7 +5,7 @@
 #
 
 # Amazon Linux Paths
-webroot=/var/www/html
+webroot=/var/www
 httproot=/etc/apache2
 pearroot=/usr/share/php/
 ldaproot=/etc/ldap
