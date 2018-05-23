@@ -89,10 +89,7 @@ alias imgcat="~/Applications/ShellScripts/my_scripts/imgcat.sh"
 alias sss="find ./ -type f -print0 | xargs -0 perl -pi -w -e"
 alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_three.py"
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
-<<<<<<< Updated upstream
 alias ram="system_profiler SPHardwareDataType | grep Memory:"
 alias cpu="system_profiler SPHardwareDataType | grep Processors:"
 alias cores="system_profiler SPHardwareDataType | grep Cores:"
-=======
 alias sshfs_eu="sshfs superuser@euserve.kajohansen.com:/home/superuser ~/Euserve -o IdentityFile=~/.ssh/superuser-euserve"
->>>>>>> Stashed changes

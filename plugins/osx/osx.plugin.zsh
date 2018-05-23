@@ -177,3 +177,5 @@ function copyfile { # copy file to clipboard
   local file_to_copy=$1
   cat $file_to_copy | pbcopy
 }
+
+

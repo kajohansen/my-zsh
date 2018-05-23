@@ -57,3 +57,17 @@ function extract() {
   fi
 }
 
+function batch_rn {
+	echo "Enter the filextension of the files to rename (like 'jpg')";
+	read FILTYPE;	
+	echo "Enter base name\nExample: 'NEW' will give NEW_00.jpg as filename";
+	read FILENAME; ITER=0;
+	for file in *.jpg; do
+	if (($ITER < 10)); then
+		mv "$file" $FILENAME"_0"$ITER"."$FILTYPE;
+	else
+		mv "$file" $FILENAME"_"$ITER"."$FILTYPE;
+	fi;
+	ITER=$(expr $ITER + 1);
+	done
+}
