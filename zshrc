@@ -29,6 +29,7 @@ source $ZSH/my-zsh.sh
 #export FREEGLUT_HEADERS='/Developer/homebrew/Cellar/freeglut/2.8.1/include'
 #export C_INCLUDE_PATH=.:$FREEGLUT_HEADERS:/opt/X11/included
 #export MAGICK_LIB='/usr/local/Cellar/imagemagick/6.8.0-10/lib'
+#export DYLD_MYSQL_PATH="/Users/superuser/Library/Mobile Documents/com~apple~CloudDocs/Developer/Applications/Cocoa/MySql/mysqlConnectorC/libmysql/Debug"
 #export BREW_HOME='/Developer/homebrew'
 #export GEMS_HOME='~/.rbenv/shims'
 #export PATH=/usr/local/bin:$GEMS_HOME:$BREW_HOME/bin:$PATH
