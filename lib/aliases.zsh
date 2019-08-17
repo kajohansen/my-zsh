@@ -68,9 +68,12 @@ alias dpf="sudo pfctl -d"
 alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2008\ R2\ x64.vmwarevm/Windows\ Server\ 2008\ R2\ x64.vmx nogui"
 alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias rhttpd="sudo apachectl restart"
+alias wwwroot="cd /Library/Server/Web/Data/"
 
 # OSX aliases
 #alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
+alias eaccess="sudo vim /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
+alias pma="sudo postmap /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
 alias top="top -n 10 -o cpu -s 5"
 alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
