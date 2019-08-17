@@ -1,3 +1,6 @@
+# paths
+ICLOUD_HOME='~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+
 # Super user
 alias _='sudo'
 
@@ -41,8 +44,6 @@ alias taccess="sudo tail -f /private/var/log/apache2/access_log" # follow apache
 alias terror="sudo tail -f /private/var/log/apache2/error_log" # follow apache server error log file
 alias evimrc="vim ~/.vimrc"
 alias vimrc="cat ~/.vimrc"
-alias taccess="sudo tail -f /var/log/httpd/access_log" # follow apache server access log file
-alias terror="sudo tail -f /var/log/httpd/error_log" # follow apache server error log file
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
 alias ephpini="sudo vim /etc/php.ini"
 alias ehttpd="sudo vim /etc/apache2/httpd.conf"
@@ -75,24 +76,28 @@ alias wwwroot="cd /Library/Server/Web/Data/"
 alias eaccess="sudo vim /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
 alias pma="sudo postmap /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
 alias top="top -n 10 -o cpu -s 5"
-alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Contents/Resources/stroke"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
-alias sass="sass"
-alias geolocation="/Users/superuser/Applications/Ruby/functions/geo_coding.rb"
-alias iplocation="/Users/superuser/Applications/Ruby/functions/ip_location.rb"
-alias watch_chrome="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch_chrome.rb"
-alias watch="/Users/Shared/Box\ Sync/Applications/Ruby/webWorkflow/watch/watch.rb"
+alias geolocation=$ICLOUD_HOME/Developer/Applications/Ruby/functions/geo_coding.rb
+alias iplocation=$ICLOUD_HOME/Developer/Applications/Ruby/functions/ip_location.rb
+alias watch_chrome=$ICLOUD_HOME/Developer/Applications/Ruby/webWorkflow/watch/watch_chrome.rb
+alias watch=$ICLOUD_HOME/Developer/Applications/Ruby/webWorkflow/watch/watch.rb
+alias coffee=$ICLOUD_HOME/Developer/Applications/Ruby/functions/coffee.rb
 alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
+alias dns_open="sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1" # set dns servers to Open DNS
 alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
+alias dns_get="sudo networksetup -setdnsservers Wi-Fi 84.208.20.110 84.208.20.111"
 alias dns_local="sudo networksetup -setdnsservers Wi-Fi 192.168.0.1"
-alias dns_win="sudo networksetup -setdnsservers Wi-Fi 192.168.1.1"
+alias dns_sme="sudo networksetup -setdnsservers Wi-Fi 192.168.1.1"
 alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
 alias listening="lsof -n -i tcp"
-alias imgcat="~/Applications/ShellScripts/my_scripts/imgcat.sh"
+alias imgcat=$ICLOUD_HOME/Developer/Applications/ShellScripts/my_scripts/imgcat.sh
 alias sss="find ./ -type f -print0 | xargs -0 perl -pi -w -e"
 alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_three.py"
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
 alias ram="system_profiler SPHardwareDataType | grep Memory:"
 alias cpu="system_profiler SPHardwareDataType | grep Processors:"
 alias cores="system_profiler SPHardwareDataType | grep Cores:"
-alias sshfs_eu="sshfs superuser@euserve.kajohansen.com:/home/superuser ~/Euserve -o IdentityFile=~/.ssh/superuser-euserve"
+alias rename="echo 'ls -t *.jpg | cat -n | while read n f; do mv \"\$f\" \"\$(printf thumb_%02d.jpg \$n)\"; done'"
+alias tcp="netstat -p TCP"
+alias udp="netstat -p UDP"
+alias router="netstat -rn|grep -E 'default|Destination"
