@@ -1,11 +1,12 @@
 # Aliases
-alias djrs="python manage.py runserver"
-alias djsh="python manage.py shell"
-alias djsm="python manage.py showmigrations"
-alias djsmp="python manage.py showmigrations --plan"
-alias djmm="python manage.py makemigrations"
-alias djm="python manage.py migrate"
-alias djt="python manage.py test"
+alias djrs="python3 manage.py runserver"
+alias djsh="python3 manage.py shell -i bpython"
+alias djsm="python3 manage.py showmigrations"
+alias djsmp="python3 manage.py showmigrations --plan"
+alias djmm="python3 manage.py makemigrations"
+alias djm="python3 manage.py migrate"
+alias djt="python3 manage.py test"
+alias djdb="python3 manage.py dbshell"
 
 #compdef manage.py
 typeset -ga nul_args

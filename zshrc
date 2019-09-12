@@ -2,7 +2,7 @@ export ZSH=$HOME/.my-zsh
 export EDITOR='vim'
 
 
-# Look in ~/.my-zsh/themes/
+# Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="candy"
 
 # Set to this to use case-sensitive completion
@@ -17,26 +17,28 @@ export DISABLE_AUTO_UPDATE="true"
 # Uncomment following line if you want to disable autosetting terminal title
 export DISABLE_AUTO_TITLE="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.my-zsh/plugins/*)
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx)
+plugins=(git osx brew django svn)
 
 source $ZSH/my-zsh.sh
 
 # OSX
-#export PG_HOME='/Library/PostgreSQL/9.1/'
-#export MYSQL_HOME='/usr/local/mysql-5.6.16-osx10.7-x86_64'
-#export FREEGLUT_HEADERS='/Developer/homebrew/Cellar/freeglut/2.8.1/include'
-#export C_INCLUDE_PATH=.:$FREEGLUT_HEADERS:/opt/X11/included
+export MYSQL_HOME='/usr/local/mysql-5.7.17-macos10.12-x86_64'
 #export MAGICK_LIB='/usr/local/Cellar/imagemagick/6.8.0-10/lib'
-#export DYLD_MYSQL_PATH="/Users/superuser/Library/Mobile Documents/com~apple~CloudDocs/Developer/Applications/Cocoa/MySql/mysqlConnectorC/libmysql/Debug"
-#export BREW_HOME='/Developer/homebrew'
-#export GEMS_HOME='~/.rbenv/shims'
-#export PATH=/usr/local/bin:$GEMS_HOME:$BREW_HOME/bin:$PATH
+export GEMS_HOME='~/.rbenv/shims'
+export BREW_HOME='/Developer/homebrew'
+export PG_HOME=$BREW_HOME/Cellar/postgresql@9.6/9.6.15_1/
+export PY3_HOME=$BREW_HOME/Cellar/python/3.7.0/libexec
+#export DYLD_LIBRARY_PATH="/Users/superuser/Library/Mobile Documents/com~apple~CloudDocs/Developer/Applications/Cocoa/MySql/mysqlConnectorC/libmysql/Debug"
+export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$BREW_HOME/include:$MYSQL_HOME/bin:$PG_HOME/bin:$PATH
+export HOMEBREW_GITHUB_API_TOKEN="60906e31fbdacdb970c43bc435964edde4359775"
+export OPENSSL_ROOT_DIR=$BREW_HOME'/opt/openssl/'
+export OPENSSL_INCLUDE_DIR=$OPENSSL_ROOT_DIR'/include'
 
 # ALL
 export SVN_EDITOR="vim"
 
-# Ruby - rbenv initialize
+# Ruby: rbenv initialize
 #eval "$(rbenv init -)"
-
+#export PATH="/Developer/homebrew/opt/openssl/bin:$PATH"
