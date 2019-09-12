@@ -69,9 +69,12 @@ alias dpf="sudo pfctl -d"
 alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2008\ R2\ x64.vmwarevm/Windows\ Server\ 2008\ R2\ x64.vmx nogui"
 alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias rhttpd="sudo apachectl restart"
+alias wwwroot="cd /Library/Server/Web/Data/"
 
 # OSX aliases
 #alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
+alias eaccess="sudo vim /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
+alias pma="sudo postmap /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
 alias top="top -n 10 -o cpu -s 5"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias geolocation=$ICLOUD_HOME/Developer/Applications/Ruby/functions/geo_coding.rb
@@ -97,4 +100,4 @@ alias cores="system_profiler SPHardwareDataType | grep Cores:"
 alias rename="echo 'ls -t *.jpg | cat -n | while read n f; do mv \"\$f\" \"\$(printf thumb_%02d.jpg \$n)\"; done'"
 alias tcp="netstat -p TCP"
 alias udp="netstat -p UDP"
-alias router="netstat -rn|grep -E 'default|Destination"
+alias router="netstat -rn|grep -E 'default|Destination'"
