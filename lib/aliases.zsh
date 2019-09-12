@@ -101,3 +101,4 @@ alias rename="echo 'ls -t *.jpg | cat -n | while read n f; do mv \"\$f\" \"\$(pr
 alias tcp="netstat -p TCP"
 alias udp="netstat -p UDP"
 alias router="netstat -rn|grep -E 'default|Destination'"
+alias sshfs_eu="sshfs superuser@euserve.kajohansen.com:/home/superuser ~/Euserve -o IdentityFile=~/.ssh/superuser-euserve"
