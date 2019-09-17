@@ -1,5 +1,6 @@
 # Aliases
 alias djrs="python3 manage.py runserver"
+alias djrs0="python3 manage.py runserver 0.0.0.0:8000"
 alias djsh="python3 manage.py shell -i bpython"
 alias djsm="python3 manage.py showmigrations"
 alias djsmp="python3 manage.py showmigrations --plan"

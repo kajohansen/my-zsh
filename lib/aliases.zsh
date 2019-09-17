@@ -28,7 +28,7 @@ alias x=extract
 
 # file operations
 alias v='sudo vim' # vim text editor
-alias diff="diff -Bwy --suppress-common-lines" # compare two files
+#alias diff="diff -Bwy --suppress-common-lines" # compare two files
 alias f="sudo tail -f" # contiously print last output of file (log files typically)
 
 # File aliases
