@@ -97,8 +97,12 @@ alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_three
 alias ram="system_profiler SPHardwareDataType | grep Memory:"
 alias cpu="system_profiler SPHardwareDataType | grep Processors:"
 alias cores="system_profiler SPHardwareDataType | grep Cores:"
+<<<<<<< Updated upstream
 alias rename="echo 'ls -t *.jpg | cat -n | while read n f; do mv \"\$f\" \"\$(printf thumb_%02d.jpg \$n)\"; done'"
 alias tcp="netstat -p TCP"
 alias udp="netstat -p UDP"
 alias router="netstat -rn|grep -E 'default|Destination'"
 alias sshfs_eu="sshfs superuser@euserve.kajohansen.com:/home/superuser ~/Euserve -o IdentityFile=~/.ssh/superuser-euserve"
+=======
+alias xcode="open -a /Applications/Xcode.app"
+>>>>>>> Stashed changes
