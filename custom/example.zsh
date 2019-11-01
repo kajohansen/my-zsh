@@ -22,4 +22,4 @@ cellar=/Developer/homebrew/Cellar
 webapps=/Library/Server/Web/Config/apache2/webapps
 icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
 postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
-site-packages=/Developer/homebrew/lib/python3.7/site-packages
+sitePackages=/Developer/homebrew/lib/python3.7/site-packages
