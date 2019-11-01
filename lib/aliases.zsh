@@ -22,7 +22,7 @@ alias pu='pushd'
 alias po='popd'
 
 # Show history
-alias history='fc -l 1'
+alias h='fc -l 1'
 
 alias x=extract
 

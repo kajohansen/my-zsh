@@ -21,3 +21,5 @@ myzsh=~/.my-zsh
 cellar=/Developer/homebrew/Cellar
 webapps=/Library/Server/Web/Config/apache2/webapps
 icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
+site-packages=/Developer/homebrew/lib/python3.7/site-packages
+
