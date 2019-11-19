@@ -11,10 +11,23 @@ function upgrade_oh_my_zsh() {
 }
 
 function aliases() {
-	echo "# my-zsh aliases"
-	cat ~/.my-zsh/lib/aliases.zsh | egrep '^alias'
-	echo "# zshrc aliases"
-	cat ~/.zshrc | egrep '^alias'
+	# quickly list default or plugin aliases
+	if [[ "$1" == "" ]]; then
+		echo "# my-zsh aliases"
+		cat ~/.my-zsh/lib/aliases.zsh | egrep '^alias'
+	elif [[ "$1" == "osx" ]]; then 
+		echo "# OSX aliases"
+		cat ~/.my-zsh/plugins/osx/osx.plugin.zsh | egrep '^alias'
+	elif [[ "$1" == "django" ]]; then
+		echo "# Django aliases"
+		cat ~/.my-zsh/plugins/django/django.plugin.zsh | egrep '^alias'
+	elif [[ "$1" == "git" ]]; then
+		echo "# Git aliases"
+		cat ~/.my-zsh/plugins/git/git.plugin.zsh | egrep '^alias'
+	elif [[ "$1" == "apache" ]]; then
+		echo "# Git aliases"
+		cat ~/.my-zsh/plugins/apache2/apache2.zsh | egrep '^alias'
+	fi
 }
 
 function take() {

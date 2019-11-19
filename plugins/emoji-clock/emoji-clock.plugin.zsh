@@ -25,5 +25,5 @@ function emoji-clock() {
     12) clock="🕛"; [ $minutes -ge 30 ] && clock="🕧";;
      *) clock="⌛";;
   esac
-  echo $clock
+  echo $clock ": " $hour $minutes
 }
