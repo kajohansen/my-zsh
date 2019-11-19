@@ -1,5 +1,6 @@
 export ZSH=$HOME/.my-zsh
-export EDITOR='vim'
+export EDITOR='vim' # change this for TextMate when we have it installed
+# export EDITOR="/usr/local/bin/mate -w" # when TextMate is installed with commandline tool
 
 
 # Look in ~/.oh-my-zsh/themes/
@@ -35,9 +36,6 @@ export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$BREW_HOME/include:$MYS
 export HOMEBREW_GITHUB_API_TOKEN="60906e31fbdacdb970c43bc435964edde4359775"
 export OPENSSL_ROOT_DIR=$BREW_HOME'/opt/openssl/'
 export OPENSSL_INCLUDE_DIR=$OPENSSL_ROOT_DIR'/include'
-
-# ALL
-export SVN_EDITOR="vim"
 
 # Ruby: rbenv initialize
 #eval "$(rbenv init -)"

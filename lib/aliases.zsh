@@ -70,6 +70,8 @@ alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusio
 alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias rhttpd="sudo apachectl restart"
 alias wwwroot="cd /Library/Server/Web/Data/"
+alias websftpn="cd ~/Sites && sftp -i ~/.ssh/superuser-nserve nserve.kajohansen.com:/Library/Server/Web/Data"
+alias websftpv="cd ~/Sites && sftp -i ~/.ssh/superuser-vserve vserve.kajohansen.com:/Library/Server/Web/Data"
 
 # OSX aliases
 #alias gcc="gcc -Wall -W -pedantic -ansi -std=c99 -o"
