@@ -1,6 +1,5 @@
 # Add yourself some shortcuts to projects you often work on
-# Example:
-# Add yourself some shortcuts to projects you often work on
+
 # Mac OS X paths
 # wwwroot=/Library/WebServer/Documents
 # httproot=/etc/apache2
@@ -23,3 +22,5 @@ httproot=/Library/Server/Web/Config/apache2/
 webapps=/Library/Server/Web/Config/apache2/webapps
 postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
 svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
+webapps=/Library/Server/Web/Config/apache2/webapps
+icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
