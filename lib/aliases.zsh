@@ -16,7 +16,8 @@ alias pu='pushd'
 alias po='popd'
 
 # Show history
-alias h='fc -l 1'
+# alias h='fc -l 1'
+alias h='awk "{print NR,substr(\$2,14,length(\$2)),\$3,\$4,\$5,\$6,\$7,\$8,\$9}" ~/.zsh_history'
 
 # File aliases
 alias v='sudo vim' # vim text editor
@@ -37,6 +38,7 @@ alias ephpini="sudo vim /etc/php.ini"
 alias mycnf="cat /etc/mysql/my.cnf"
 alias emycnf="sudo vim /etc/my.cnf"
 alias src="source ~/.zshrc"
+alias sftp="rlwrap sftp"
 
 # My aliases
 alias path='echo $PATH | tr ":" "\n"' # print shell path variable
