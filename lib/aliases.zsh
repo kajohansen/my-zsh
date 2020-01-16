@@ -75,4 +75,5 @@ alias coffee=$ICLOUD_HOME/Developer/Applications/Ruby/functions/coffee.rb
 alias imgcat=$ICLOUD_HOME/Developer/Applications/ShellScripts/my_scripts/imgcat.sh
 alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_three.py"
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
-
+alias odlist="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/PyObjC/ODcmdList.py"
+alias iconset="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/functions/generate-iconset.py"
