@@ -6,6 +6,7 @@
 # ------------------------------------------------------------------------------
 
 # Aliases
+alias top="top -n 10 -o cpu -s 5"
 alias mac="networksetup -getmacaddress" # mac en1 (will get mac address of Wi-Fi card)
 alias thomson="networksetup -setairportnetwork en1 Thomson8E2CA7 E0F2181E20"
 alias express="networksetup -setairportnetwork en1 'Riis Nettverk' 101Delicion"
@@ -13,6 +14,21 @@ alias stroke="/System/Library/CoreServices/Applications/Network\ Utility.app/Con
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias eject="osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'"
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say dns lagring ble rensket;"
+alias dns_google="sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4" # set dns servers to google dns
+alias dns_open="sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1" # set dns servers to Open DNS
+alias dns_altibox="sudo networksetup -setdnsservers Wi-Fi 109.247.114.4 92.220.228.70"
+alias dns_get="sudo networksetup -setdnsservers Wi-Fi 84.208.20.110 84.208.20.111"
+alias dns_local="sudo networksetup -setdnsservers Wi-Fi 192.168.0.1"
+alias dns_sme="sudo networksetup -setdnsservers Wi-Fi 192.168.1.1"
+alias dns="cat /etc/resolv.conf|awk '/nameserver/ {print \$2}'"
+alias listening="lsof -n -i tcp"
+alias ram="system_profiler SPHardwareDataType | grep Memory:"
+alias cpu="system_profiler SPHardwareDataType | grep Processors:"
+alias cores="system_profiler SPHardwareDataType | grep Cores:"
+alias tcp="netstat -p TCP"
+alias udp="netstat -p UDP"
+alias router="netstat -rn|grep -E 'default|Destination'"
+alias xcode="open -a /Applications/Xcode.app"
 
 # Functions
 function tab() {
@@ -36,7 +52,7 @@ EOF
 EOF
   }
 
-  [[ "$the_app" == 'iTerm' ]] && {
+  [[ "$the_app" == 'iTerm2' ]] && {
     osascript 2>/dev/null <<EOF
       tell application "iTerm"
         set current_terminal to current terminal
@@ -64,12 +80,12 @@ function vsplit_tab() {
 EOF
   )
 
-  [[ "$the_app" == 'iTerm' ]] && {
+  [[ "$the_app" == 'iTerm2' ]] && {
     osascript 2>/dev/null <<EOF
       tell application "iTerm" to activate
 
       tell application "System Events"
-        tell process "iTerm"
+        tell process "iTerm2"
           tell menu item "Split Vertically With Current Profile" of menu "Shell" of menu bar item "Shell" of menu bar 1
             click
           end tell
@@ -93,12 +109,12 @@ function split_tab() {
 EOF
   )
 
-  [[ "$the_app" == 'iTerm' ]] && {
+  [[ "$the_app" == 'iTerm2' ]] && {
     osascript 2>/dev/null <<EOF
       tell application "iTerm" to activate
 
       tell application "System Events"
-        tell process "iTerm"
+        tell process "iTerm2"
           tell menu item "Split Horizontally With Current Profile" of menu "Shell" of menu bar item "Shell" of menu bar 1
             click
           end tell
