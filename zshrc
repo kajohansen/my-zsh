@@ -36,7 +36,11 @@ export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$BREW_HOME/include:$MYS
 export HOMEBREW_GITHUB_API_TOKEN="60906e31fbdacdb970c43bc435964edde4359775"
 export OPENSSL_ROOT_DIR=$BREW_HOME'/opt/openssl/'
 export OPENSSL_INCLUDE_DIR=$OPENSSL_ROOT_DIR'/include'
+export SERVER_HOME='/Applications/Server.app/Contents/ServerRoot/'
+# OSX PATH
+export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
+# OSX Server PATH
+# export PATH=$SERVER_HOME/usr/bin:$SERVER_HOME/usr/sbin:$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
 
 # Ruby: rbenv initialize
 #eval "$(rbenv init -)"
-#export PATH="/Developer/homebrew/opt/openssl/bin:$PATH"

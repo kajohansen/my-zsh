@@ -1,14 +1,9 @@
 # Add yourself some shortcuts to projects you often work on
-# Example:
-# Add yourself some shortcuts to projects you often work on
-# Example:
-#
-# brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
-#
+
 # Mac OS X paths
-httproot=/etc/apache2
+# wwwroot=/Library/WebServer/Documents
+# httproot=/etc/apache2
 pearroot=/usr/lib/php/pear
-svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
 desktop=/Users/superuser/Desktop
 documents=/Users/superuser/Documents
 sites=/Users/superuser/Sites
@@ -16,10 +11,16 @@ dropbox=/Users/superuser/Dropbox\ \(Privat\)
 downloads=/Users/superuser/Downloads
 usrlocal=/usr/local
 homebrew=/Developer/homebrew
-webserver=/Library/WebServer/Documents
+sitePackages=/Developer/homebrew/lib/python3.7/site-packages
 myzsh=~/.my-zsh
 cellar=/Developer/homebrew/Cellar
+icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
+
+# MAC OS Server paths
+wwwroot=/Library/Server/Web/Data/WebApps
+httproot=/Library/Server/Web/Config/apache2/
+webapps=/Library/Server/Web/Config/apache2/webapps
+postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
+svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
 webapps=/Library/Server/Web/Config/apache2/webapps
 icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
-postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
-sitePackages=/Developer/homebrew/lib/python3.7/site-packages

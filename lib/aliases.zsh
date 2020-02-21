@@ -60,7 +60,6 @@ alias dpf="sudo pfctl -d"
 alias vmWinSrv="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Windows\ Server\ 2008\ R2\ x64.vmwarevm/Windows\ Server\ 2008\ R2\ x64.vmx nogui"
 alias vmUbuntu="/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start ~/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit\ Server\ 16.04.1.vmwarevm/Ubuntu\ 64-bit\ Server\ 16.04.1.vmx nogui"
 alias srhttpd="sudo server-apachectl restart"
-alias wwwroot="cd /Library/Server/Web/Data/"
 alias websftpn="cd ~/Sites && sftp -i ~/.ssh/superuser-nserve nserve.kajohansen.com:/Library/Server/Web/Data"
 alias websftpv="cd ~/Sites && sftp -i ~/.ssh/superuser-vserve vserve.kajohansen.com:/Library/Server/Web/Data"
 alias eaccess="sudo vim /Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/access"
@@ -76,4 +75,5 @@ alias coffee=$ICLOUD_HOME/Developer/Applications/Ruby/functions/coffee.rb
 alias imgcat=$ICLOUD_HOME/Developer/Applications/ShellScripts/my_scripts/imgcat.sh
 alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_three.py"
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
-
+alias odlist="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/PyObjC/ODcmdList.py"
+alias iconset="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/functions/generate-iconset.py"
