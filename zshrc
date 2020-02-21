@@ -4,7 +4,7 @@ export EDITOR='vim' # change this for TextMate when we have it installed
 
 
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="candy"
+export ZSH_THEME="jtriley" # was candy
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
