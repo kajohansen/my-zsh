@@ -21,6 +21,7 @@ alias h='awk "{print NR,substr(\$2,14,length(\$2)),\$3,\$4,\$5,\$6,\$7,\$8,\$9}"
 
 # File aliases
 alias v='sudo vim' # vim text editor
+alias e='sudo emacs' # emacs text editor
 #alias diff="diff -Bwy --suppress-common-lines" # compare two files
 alias f="sudo tail -f" # contiously print last output of file (log files typically)
 alias x=extract
