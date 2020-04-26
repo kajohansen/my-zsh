@@ -42,5 +42,20 @@ export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
 # OSX Server PATH
 # export PATH=$SERVER_HOME/usr/bin:$SERVER_HOME/usr/sbin:$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
 
+# CPPFLAGS
+iICU4C="-I/Developer/homebrew/opt/icu4c/include"
+iREADLINE="-I/Developer/homebrew/opt/readline/include"
+iOPENSSL="-I/Developer/homebrew/opt/openssl@1.1/include"
+iPOSTGRESQL="-L/Developer/homebrew/opt/postgresql@10/lib"
+export CPPFLAGS=$iICU4C" "$iREADLINE" "$iOPENSSL" "$iPOSTGRESQL
+# LDFLAGS
+lICU4C="-L/Developer/homebrew/opt/icu4c/lib"
+lOPENSSL="-L/Developer/homebrew/opt/openssl@1.1/lib"
+lREADLINE="-L/Developer/homebrew/opt/readline/lib"
+lPOSTGRESQL="-I/Developer/homebrew/opt/postgresql@10/include"
+export LDFLAGS=$lICU4C" "$lOPENSSL" "$lREADLINE" "$lPOSTGRESQL
+
+export PKG_CONFIG_PATH="/Developer/homebrew/opt/icu4c/lib/pkgconfig"
+
 # Ruby: rbenv initialize
 #eval "$(rbenv init -)"
