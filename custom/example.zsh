@@ -15,6 +15,7 @@ sitePackages=/Developer/homebrew/lib/python3.7/site-packages
 myzsh=~/.my-zsh
 cellar=/Developer/homebrew/Cellar
 icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
+metasploit=/usr/local/share/metasploit-framework
 
 # MAC OS Server paths
 wwwroot=/Library/Server/Web/Data/WebApps

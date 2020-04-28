@@ -77,3 +77,4 @@ alias objthree="python /Users/superuser/Applications/Python/fbx/convert_obj_thre
 alias fbxthree="python /Users/superuser/Applications/Python/fbx/convert_to_threejs.py"
 alias odlist="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/PyObjC/ODcmdList.py"
 alias iconset="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/functions/generate-iconset.py"
+alias iconXimages="python /Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/Developer/Applications/Python/functions/xcodeIconImages.py"
