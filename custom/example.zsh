@@ -1,9 +1,10 @@
 # Add yourself some shortcuts to projects you often work on
 
 # Mac OS X paths
-# wwwroot=/Library/WebServer/Documents
-# httproot=/etc/apache2
+wwwroot=/Library/WebServer/Documents
+httproot=/etc/apache2
 pearroot=/usr/lib/php/pear
+svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
 desktop=/Users/superuser/Desktop
 documents=/Users/superuser/Documents
 sites=/Users/superuser/Sites
@@ -17,11 +18,9 @@ cellar=/Developer/homebrew/Cellar
 icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
 metasploit=/usr/local/share/metasploit-framework
 
-# MAC OS Server paths
-wwwroot=/Library/Server/Web/Data/WebApps
-httproot=/Library/Server/Web/Config/apache2/
-webapps=/Library/Server/Web/Config/apache2/webapps
-postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
-svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
-webapps=/Library/Server/Web/Config/apache2/webapps
-icloud=/Users/superuser/Library/Mobile\ Documents/com~apple~CloudDocs/
+## MAC OS Server paths
+# wwwroot=/Library/Server/Web/Data/WebApps
+# httproot=/Library/Server/Web/Config/apache2/
+# webapps=/Library/Server/Web/Config/apache2/webapps
+# postfixroot=/Applications/Server.app/Contents/ServerRoot/Library/Server/Mail/Config/postfix/
+# svnroot=/Volumes/BackupVibes/OSX/Data/Subversion
