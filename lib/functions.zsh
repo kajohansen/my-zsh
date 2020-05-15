@@ -30,6 +30,16 @@ function aliases() {
 	fi
 }
 
+function m() {
+	# open man-page in Preview
+	if [[ "$1" == "" ]]; then
+		echo "please provide a commandline command as an argument"
+		echo "this function will open the man page for the command in the Preview App"
+	else
+		man -t $1 | open -f -a /Applications/Preview.app
+	fi
+}
+
 function take() {
   mkdir -p $1
   cd $1
