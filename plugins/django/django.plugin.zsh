@@ -8,6 +8,7 @@ alias djmm="python manage.py makemigrations"
 alias djm="python manage.py migrate"
 alias djt="python manage.py test"
 alias djdb="python manage.py dbshell"
+alias djcols="python manage.py collectstatic"
 
 #compdef manage.py
 typeset -ga nul_args

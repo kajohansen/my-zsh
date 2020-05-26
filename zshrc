@@ -30,7 +30,8 @@ export MYSQL_HOME='/usr/local/mysql-5.7.17-macos10.12-x86_64'
 export GEMS_HOME='~/.rbenv/shims'
 export BREW_HOME='/Developer/homebrew'
 export PG_HOME=$BREW_HOME/Cellar/postgresql@9.6/9.6.15_1
-export PY3_HOME=$BREW_HOME/Cellar/python/3.7.0/libexec
+#export PY3_HOME=$BREW_HOME/Cellar/python/3.7.0/libexec
+export PY3_HOME=/Library/Frameworks/Python.framework/Versions/3.7
 #export DYLD_LIBRARY_PATH="/Users/superuser/Library/Mobile Documents/com~apple~CloudDocs/Developer/Applications/Cocoa/MySql/mysqlConnectorC/libmysql/Debug"
 export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$BREW_HOME/sbin:$BREW_HOME/include:$MYSQL_HOME/bin:$PG_HOME/bin:$PATH
 export HOMEBREW_GITHUB_API_TOKEN="60906e31fbdacdb970c43bc435964edde4359775"
@@ -42,12 +43,17 @@ export PATH=$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
 # export SERVER_HOME='/Applications/Server.app/Contents/ServerRoot'
 # export PATH=$SERVER_HOME/usr/bin:$SERVER_HOME/usr/sbin:$PY3_HOME/bin:$BREW_HOME/bin:$MYSQL_HOME/bin:$PATH
 
+# DYLDFLAGS(dynamic linker, see "man dyld" for more on linking frameworks and libraries)
+dMYSQL=/usr/local/mysql-5.7.17-macos10.12-x86_64/lib
+export DYLD_LIBRARY_PATH=$dMYSQL
+
 # CPPFLAGS
 iICU4C="-I/Developer/homebrew/opt/icu4c/include"
 iREADLINE="-I/Developer/homebrew/opt/readline/include"
 iOPENSSL="-I/Developer/homebrew/opt/openssl@1.1/include"
 iPOSTGRESQL="-L/Developer/homebrew/opt/postgresql@10/lib"
 export CPPFLAGS=$iICU4C" "$iREADLINE" "$iOPENSSL" "$iPOSTGRESQL
+
 # LDFLAGS
 lICU4C="-L/Developer/homebrew/opt/icu4c/lib"
 lOPENSSL="-L/Developer/homebrew/opt/openssl@1.1/lib"

@@ -1,4 +1,6 @@
 # Aliases
+alias gi='git init'
+compdef _git gi=git-init
 alias gst='git status'
 compdef _git gst=git-status
 alias gl='git log --oneline --reverse --decorate'
