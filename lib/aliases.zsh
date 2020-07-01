@@ -36,8 +36,6 @@ alias ezshrc="vim ~/.zshrc"
 alias evimrc="vim ~/.vimrc"
 alias vimrc="cat ~/.vimrc"
 alias ephpini="sudo vim /etc/php.ini"
-alias mycnf="cat /etc/mysql/my.cnf"
-alias emycnf="sudo vim /etc/my.cnf"
 alias src="source ~/.zshrc"
 alias sftp="rlwrap sftp"
 
