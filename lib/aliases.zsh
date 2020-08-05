@@ -64,3 +64,4 @@ alias esconf="vim ~/.ssh/config"
 alias lipt="sudo iptables -L -v"
 alias liptn="sudo iptables -t nat -L -v"
 alias keygen='mkdir .ssh && ssh-keygen -q -t rsa -b 4096 && cat .ssh/id_rsa.pub > .ssh/authorized_keys'
+alias services='systemctl list-units --type service'
