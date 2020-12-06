@@ -1,5 +1,16 @@
-# Fix Emacs tramp zsh problems
-[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+# Fix Emacs tram problems with zsh
+# Simple
+# [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+# Complex
+if [[ "$TERM" == "dumb" ]]
+then
+  unsetopt zle
+  unsetopt prompt_cr
+  unsetopt prompt_subst
+  unfunction precmd
+  unfunction preexec
+  PS1='$ '
+fi
 
 # my-zsh configuration start
 export ZSH=$HOME/.my-zsh
