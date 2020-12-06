@@ -1,3 +1,7 @@
+# Fix Emacs tramp zsh problems
+[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+
+# my-zsh configuration start
 export ZSH=$HOME/.my-zsh
 export EDITOR='vim' # change this for TextMate when we have it installed
 # export EDITOR="/usr/local/bin/mate -w" # when TextMate is installed with commandline tool
